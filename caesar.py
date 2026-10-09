@@ -28,3 +28,4 @@ for zeichen in text:
     
 print(ergebnis)
 
+#raute test
