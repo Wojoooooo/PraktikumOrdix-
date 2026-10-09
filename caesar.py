@@ -13,6 +13,8 @@ text = text.replace ("Ä","Ae")
 text = text.replace ("Ö","Oe")
 text = text.replace ("Ü","Ue")
 
+text = text.replace ("ß", "ss")
+
 for zeichen in text:
     if zeichen.lower() in alphabet:
         zeichenIsLower = zeichen.isupper()
@@ -21,7 +23,7 @@ for zeichen in text:
         neuer_buchstabe = alphabet[neu_position]
         if zeichenIsLower:
             neuer_buchstabe = neuer_buchstabe.upper()
-            
+
         ergebnis = ergebnis + neuer_buchstabe
     else:
         ergebnis = ergebnis + zeichen
