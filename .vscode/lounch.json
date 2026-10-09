@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Aktuelle Datei",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: main.py mit Argumenten",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": ["--input", "daten.csv", "--verbose"],
+      "cwd": "${workspaceFolder}",
+      "env": { "DEBUG": "1" },
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: Modul",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "meinpaket.app"
+    }
+  ]
+}
